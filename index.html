@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#073f35"><meta name="description" content="Enfance Missionnaire de Godomey — grandir dans la foi, partager l’amour de Dieu.">
+<meta name="color-scheme" content="light">
+<title>Enfance Missionnaire — Paroisse Sainte Thérèse de Godomey</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--green:#073f35;--green2:#0d5a49;--gold:#d4a044;--cream:#fbf9f2;--ink:#163d36;--muted:#65756e;--line:#e7e9df;--shadow:0 10px 30px #153c2c12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{height:76px;background:#fffdf8f2;display:flex;align-items:center;position:sticky;top:0;z-index:20;border-bottom:1px solid #e8e6dc;backdrop-filter:blur(12px)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;min-width:245px}.brand-mark{width:52px;height:52px;border-radius:50%;border:2px solid var(--green);display:block;object-fit:cover;background:#fff;flex:0 0 52px}.brand strong{display:block;font-size:16px;line-height:1.25}.brand small{display:block;font-size:11px;margin-top:3px}.nav{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:700}.nav a{padding:9px 0;border-bottom:2px solid transparent}.nav a:hover,.nav a.active{border-color:var(--gold)}.head-actions{display:flex;align-items:center;gap:12px}.login,.btn{border:0;border-radius:30px;background:var(--green);color:white;padding:12px 19px;font-weight:700;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:9px}.menu-toggle{display:none;background:transparent;border:0;font-size:26px;color:var(--green)}
+.hero{height:min(440px,55vw);min-height:360px;position:relative;overflow:hidden;background:var(--green);color:#fff}.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 52%;transition:opacity .5s}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06392ff5 0%,#06392fdb 32%,#06392f70 52%,#06392f00 78%),linear-gradient(0deg,#052d2590,transparent 30%)}.hero-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:30px 0;max-width:1180px;width:92%;margin:auto}.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;font-weight:700;color:#f0c96d}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,4.2vw,56px);line-height:1.12;max-width:550px;margin:14px 0}.hero p{max-width:360px;line-height:1.55;margin:0 0 22px;color:#f3f6f2}.btn.gold{background:var(--gold);color:#fff}.btn.outline{background:#ffffff12;border:1px solid #ffffffb0}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-controls{display:none!important}.circle-btn{width:40px;height:40px;border-radius:50%;border:1px solid #ffffff60;background:#06483d;color:white;font-size:22px;cursor:pointer}.dots{display:none!important}.dot{height:8px;width:8px;border-radius:20px;background:#ffffff9c;border:0;padding:0;cursor:pointer}.dot.on{width:22px;background:var(--gold)}
+main{padding:26px 0 30px}.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.quick a{background:white;border:1px solid #eeeee6;border-radius:14px;padding:19px 18px;box-shadow:var(--shadow);transition:.2s}.quick a:hover{transform:translateY(-3px)}.quick-icon{width:48px;height:48px;display:grid;place-items:center;background:var(--green);color:white;border-radius:50%;font-size:21px;margin-bottom:11px}.quick a:nth-child(even) .quick-icon{background:var(--gold)}.quick b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:17px}.quick small{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+.section{padding:42px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}.kicker{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}.section h2{font:600 clamp(27px,3vw,36px)/1.2 'Playfair Display',Georgia,serif;margin:8px 0 0;color:var(--green)}.text-link{font-weight:700;color:var(--green2);font-size:13px}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr 1.18fr;gap:22px;align-items:stretch}.mission-copy{padding:8px 0}.mission-copy p{font-size:14px;line-height:1.85;color:#51655e}.saint-card{position:relative;min-height:280px;border-radius:18px;overflow:hidden;background:#e9dfc8}.saint-card img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.saint-caption{position:absolute;inset:auto 0 0;padding:40px 18px 18px;color:white;background:linear-gradient(transparent,#102d25df);font-family:'Caveat',cursive;font-size:24px}.events{background:#eaf1e9;border-radius:18px;padding:18px}.events h3{font:600 20px 'Playfair Display',Georgia,serif;margin:0 0 12px}.event{display:grid;grid-template-columns:52px 1fr 18px;gap:12px;align-items:center;background:#fffdf8;border-radius:12px;padding:11px;margin-top:8px}.date{background:#e4eee6;border-radius:9px;padding:7px 3px;text-align:center;color:var(--green);font-weight:700;font-size:12px}.date b{font-size:20px;display:block}.event strong{font-size:12px;display:block}.event small{font-size:11px;color:var(--muted)}
+.lower-grid{display:grid;grid-template-columns:1.35fr 1fr 0.9fr;gap:16px;margin-top:25px}.photo-tile{min-height:220px;position:relative;overflow:hidden;border-radius:16px;background:#dfe5d8}.photo-tile img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.photo-tile:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#071d17d9)}.photo-caption{position:absolute;z-index:1;bottom:18px;left:20px;color:white}.photo-caption b{display:block;font-size:18px}.program-card,.quote-card{border-radius:16px;padding:24px;background:#fffdf8;border:1px solid #efeee5;display:flex;flex-direction:column;justify-content:center}.program-card h3{font:600 23px 'Playfair Display',Georgia,serif;margin:12px 0}.program-card p{font-size:13px;line-height:1.7;color:var(--muted)}.quote-card{background:#f1f2e7;text-align:center;font:600 25px 'Caveat',cursive;color:var(--green)}.quote-card span{color:var(--gold);font-size:38px}
+.groups{background:#fffdf8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.group-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.group-card{background:white;border:1px solid #eceee5;border-radius:14px;padding:17px;display:flex;gap:13px}.group-symbol{width:42px;height:42px;flex-shrink:0;border-radius:12px;background:#e8f0e8;color:var(--green);display:grid;place-items:center;font-size:20px}.group-card h3{font:600 17px 'Playfair Display',Georgia,serif;margin:0 0 6px}.group-card p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}.meeting{font-weight:700;color:var(--green2);margin-top:7px!important}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.team-item{padding:15px;border-radius:12px;background:white;border:1px solid var(--line)}.team-item small{display:block;color:var(--muted);font-size:11px}.team-item b{display:block;margin-top:4px;font-size:14px}
+.join{background:linear-gradient(120deg,#073f35,#0b5b49);color:white;border-radius:22px;padding:30px;display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:center}.join h2{color:white}.join p{color:#d9e8df;line-height:1.7;font-size:14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:12px 13px;border-radius:9px;border:1px solid #ffffff65;background:#fffffffa;color:var(--ink);outline:none}.form-grid textarea{grid-column:1/-1;min-height:70px;resize:vertical}.form-grid button{grid-column:1/-1;justify-self:start}.form-note{font-size:11px;color:#d5e7dd}
+footer{background:#062f28;color:white;padding:28px 0;margin-top:44px}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}.foot .brand small{color:#d2e0d8}.foot-note{font-family:'Caveat',cursive;font-size:23px}.social{display:flex;gap:10px}.social a{width:34px;height:34px;border-radius:50%;background:#ffffff22;display:grid;place-items:center;font-size:13px}
+.notice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#073f35;color:white;padding:13px 18px;border-radius:12px;box-shadow:var(--shadow);z-index:100;display:none;max-width:90%;font-size:13px}
+@media(max-width:900px){.nav{gap:13px}.brand{min-width:unset}.mission-grid{grid-template-columns:1fr 1fr}.events{grid-column:1/-1}.lower-grid{grid-template-columns:1fr 1fr}.quote-card{min-height:180px}.group-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){header{height:68px}.brand-mark{width:44px;height:44px}.brand strong{font-size:13px}.brand small{font-size:10px}.menu-toggle{display:block}.nav{display:none;position:fixed;inset:68px 0 0;background:rgba(251,249,242,.985);backdrop-filter:blur(14px);padding:28px 7% 40px;box-shadow:0 18px 35px rgba(7,63,53,.12);flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;overflow-y:auto;z-index:30}.nav.open{display:flex;animation:menuIn .22s ease-out}.nav a{font-family:"Playfair Display",Georgia,serif;font-size:clamp(23px,6vw,30px);font-weight:600;color:var(--green);padding:18px 4px;border-bottom:1px solid #d4a04455;display:flex;align-items:center;justify-content:space-between}.nav a::after{content:"›";font-family:Arial,sans-serif;font-size:25px;color:var(--gold);font-weight:400}.nav a.active{color:#0d5a49;border-color:var(--gold)}.menu-toggle{position:relative;z-index:40;width:44px;height:44px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}.menu-toggle span{display:block;width:21px;height:2px;background:var(--green);border-radius:2px;transition:transform .2s,opacity .2s}.menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(7px) rotate(45deg)}.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-7px) rotate(-45deg)}@keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}.head-actions .login{padding:10px 12px;font-size:11px}.hero{height:520px;min-height:0}.hero-photo{object-position:60% center}.hero:after{background:linear-gradient(90deg,#06392fe8,#06392f8c 70%,#06392f25),linear-gradient(0deg,#052d2590,transparent 45%)}.hero-content{justify-content:center}.hero h1{font-size:38px}.hero p{max-width:300px}.hero-controls,.dots{display:none!important}.quick{grid-template-columns:repeat(2,1fr);gap:9px}.quick a{padding:14px}.quick a:last-child{grid-column:1/-1}.quick-icon{width:40px;height:40px}.quick b{font-size:16px}.quick small{font-size:11px}.section{padding:32px 0}.section-head{align-items:start}.mission-grid{grid-template-columns:1fr}.saint-card{min-height:320px}.events{grid-column:auto}.lower-grid{grid-template-columns:1fr}.photo-tile{min-height:230px}.quote-card{min-height:160px}.group-grid,.team-grid{grid-template-columns:1fr}.join{grid-template-columns:1fr;padding:23px}.form-grid{grid-template-columns:1fr}.form-grid textarea,.form-grid button{grid-column:auto}.foot{flex-direction:column;align-items:flex-start}.foot-note{align-self:center}.hero-buttons .btn{font-size:12px;padding:11px 14px}}
+
+/* Correctifs responsive — ajoutés sans remplacer le design existant */
+html{max-width:100%;overflow-x:clip;scroll-padding-top:84px}
+body{width:100%;max-width:100%;overflow-x:clip}
+img,svg,video,canvas,iframe{max-width:100%}
+img{height:auto}
+*,*::before,*::after{min-width:0}
+pre,code{white-space:pre-wrap;overflow-wrap:anywhere}
+p,h1,h2,h3,h4,h5,h6,a,button,label,small,span,li{overflow-wrap:anywhere}
+input,select,textarea{max-width:100%;min-width:0}
+button{max-width:100%;white-space:normal}
+.container,.wrap,.section,.hero,.hero-inner,.grid,.cards,.card,.panel,.content,.shell{max-width:100%}
+@media(max-width:760px){
+  .container,.wrap,.section,.hero-inner,.content,.shell{width:100%!important;padding-left:16px!important;padding-right:16px!important}
+  .grid,.cards{grid-template-columns:minmax(0,1fr)!important}
+  .hero h1{font-size:clamp(2rem,9vw,3.4rem)!important;line-height:1.08}
+  .hero p{max-width:100%}
+  header,nav,.top{flex-wrap:wrap;max-width:100%}
+  nav a{max-width:100%}
+  table{display:block;max-width:100%;overflow-x:auto}
+}
+
+/* Correctifs responsive : préserver le design tout en empêchant les débordements mobiles. */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+img,video,iframe,svg{max-width:100%}
+.hero,.hero-content,main,header,footer,.wrap{min-width:0;max-width:100%}
+.hero-photo{width:100%;height:100%;object-fit:cover}
+.hero-controls,#prevSlide,#nextSlide,.dots,#heroDots,.dot{display:none!important;visibility:hidden!important;pointer-events:none!important}
+@media(max-width:760px){
+  body{font-size:15px}
+  .wrap{width:100%;padding-left:16px;padding-right:16px}
+  .head{gap:8px;flex-wrap:wrap}
+  .brand{max-width:calc(100% - 52px);overflow-wrap:anywhere}
+  .brand span{min-width:0}
+  .brand strong,.brand small{overflow-wrap:anywhere}
+  .head-actions{max-width:100%}
+  .hero{width:100%;height:520px;min-height:0;overflow:hidden}
+  .hero-content{padding:24px 16px}
+  .hero h1{font-size:clamp(28px,8vw,38px)!important;overflow-wrap:anywhere}
+  .hero-buttons{width:100%;gap:8px}
+  .hero-buttons .btn{max-width:100%;white-space:normal}
+  .quick a,.group-card,.activity-card,.mission-copy,.saint-card,.section-head>*{min-width:0;max-width:100%}
+  .quick{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .quick a{overflow-wrap:anywhere}
+  .form-grid input,.form-grid select,.form-grid textarea{width:100%;min-width:0}
+  .section-head{flex-wrap:wrap;gap:12px}
+}
+
+/* Correctifs ciblés suite aux captures mobile : bouton d'en-tête et notification verte */
+.notice{
+  width: min(560px, calc(100vw - 32px)) !important;
+  max-width: calc(100vw - 32px) !important;
+  left: 16px !important;
+  right: 16px !important;
+  bottom: max(16px, env(safe-area-inset-bottom)) !important;
+  transform: none !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  white-space: normal;
+}
+.notice *{max-width:100%;overflow-wrap:anywhere;}
+@media (max-width: 650px){
+  header{height:68px;}
+  .head{height:100%;flex-wrap:nowrap!important;gap:8px!important;}
+  .brand{flex:1 1 auto;min-width:0!important;max-width:calc(100% - 42px)!important;}
+  .brand strong{font-size:13px;}
+  .brand small{font-size:10px;}
+  .head-actions{display:none!important;}
+  .menu-toggle{flex:0 0 auto;}
+  .hero{margin-top:0!important;}
+  .hero-content{padding-top:28px;padding-bottom:28px;}
+  .hero h1{max-width:100%;margin:14px 0;}
+  .hero-buttons{align-items:stretch;}
+  .hero-buttons .btn{width:fit-content;max-width:100%;}
+  .section-head,.section-head>div{min-width:0;max-width:100%;}
+  .notice{font-size:13px;line-height:1.45;padding:12px 14px;border-radius:12px;}
+}
+
+
+/* Ajustements finaux d'affichage mobile */
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box;min-width:0}
+img,video,iframe{max-width:100%}
+.wrap,.head,.section-head,.group-grid,.program-grid,.team-grid{max-width:100%}
+.group-card,.program-card,.notice,.hero-content,.hero-copy{overflow-wrap:anywhere;word-break:normal}
+@media(max-width:600px){.wrap{width:min(100% - 28px,100%)}.section-head{gap:14px;flex-wrap:wrap}.group-grid,.program-grid,.team-grid{grid-template-columns:minmax(0,1fr)!important}.group-card{width:100%;min-width:0}.notice{max-width:100%;width:100%;margin-left:0!important;margin-right:0!important}.hero-content{max-width:100%;padding-left:20px;padding-right:20px}.hero-content h1{font-size:clamp(2.15rem,9vw,3.4rem);overflow-wrap:normal}.hero-content p{font-size:clamp(1rem,4.7vw,1.35rem)}.brand{max-width:calc(100% - 66px)}.brand-mark{flex-shrink:0}}
+
+
+/* Refonte visuelle — Enfance Missionnaire Godomey */
+:root{--green:#073f35;--green2:#0d5a49;--gold:#d4a044;--gold-text:#a67a1e;--cream:#fbf9f2;--cream-2:#f4efe3;--red-liturgical:#8b1e2d;--green-pale:#e8f0e8;--ink:#163d36;--muted:#65756e;--line:#e7e2d5;--shadow-soft:0 10px 28px rgba(7,63,53,.07);--shadow-hover:0 18px 30px rgba(7,63,53,.12);--radius-card:18px}
+html{scroll-padding-top:88px}body{font-size:15px;line-height:1.75}header{background:rgba(251,249,242,.95);border-bottom:1px solid rgba(212,160,68,.18);box-shadow:0 4px 20px rgba(7,63,53,.035)}.brand strong{font-family:'Playfair Display',Georgia,serif;font-size:17px}.brand small{color:var(--muted)}.nav{gap:clamp(10px,1.7vw,24px)}.nav a{position:relative;border:0!important}.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:2px;background:var(--gold);transition:right .2s}.nav a:hover:after,.nav a.active:after{right:0}
+.hero{height:520px;min-height:460px;border-bottom:2px solid var(--gold)}.hero:after{background:linear-gradient(135deg,rgba(7,63,53,.92) 0%,rgba(7,63,53,.72) 42%,rgba(7,63,53,.18) 100%),radial-gradient(ellipse at 20% 15%,transparent 15%,rgba(0,0,0,.18) 100%)}.hero-content{max-width:1180px}.eyebrow{letter-spacing:.18em;font-size:11px}.hero h1{font-weight:600;letter-spacing:-.025em;max-width:640px}.hero p{font-size:16px;line-height:1.75;max-width:430px}.hero .btn{height:52px;border-radius:999px;padding:0 23px;justify-content:center}.btn.gold{background:var(--gold);color:#173d36}.btn.outline{border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.08)}.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(212,160,68,.8);border-radius:999px;padding:7px 13px;margin-bottom:8px;font-size:11px;letter-spacing:.08em;color:#fff8e9;background:rgba(7,63,53,.25)}
+main{padding:28px 0 38px}.quick{gap:20px}.quick a{border-radius:var(--radius-card);padding:22px 18px;border-color:#e9e4d8;box-shadow:var(--shadow-soft);transition:transform .22s,box-shadow .22s,border-color .22s}.quick a:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--gold)}.quick-icon{width:48px;height:48px;margin-bottom:14px;background:var(--green-pale);color:var(--green);font-size:0}.quick a:nth-child(even) .quick-icon{background:#f7ebd2;color:var(--gold-text)}.quick-icon svg,.group-symbol svg,.btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.quick b{font-size:18px}.quick small{font-size:12.5px;line-height:1.55}
+.section{padding:96px 0}.section-head{margin-bottom:28px}.kicker{display:flex;align-items:center;gap:10px;color:var(--gold-text);font-size:11px;letter-spacing:.18em}.kicker:before{content:"";display:inline-block;width:40px;height:1px;background:var(--gold)}.section h2{font-size:clamp(28px,3.2vw,40px);letter-spacing:-.01em;line-height:1.16}.section-head p{font-size:14px;line-height:1.75}.section-head:after{content:"✝";display:none}.mission-grid{gap:28px}.mission-copy p{font-size:15px;line-height:1.85}.saint-card{border:1px solid var(--gold);border-radius:18px;box-shadow:var(--shadow-soft)}.saint-caption{font-size:26px}.events{background:var(--green-pale);padding:22px;border:1px solid #dbe6db}.events h3{font-size:22px}.event{box-shadow:0 4px 12px rgba(7,63,53,.04);padding:13px}.date{background:#f7ebd2;color:var(--green);border:1px solid #ead6aa}.lower-grid{gap:20px}.program-card,.quote-card{border-radius:var(--radius-card);box-shadow:var(--shadow-soft);padding:28px}.quote-card{background:linear-gradient(145deg,#f4efe3,#e8f0e8);border:1px solid rgba(212,160,68,.22)}.groups{background:var(--cream-2);border:0}.group-grid{gap:20px}.group-card{position:relative;overflow:hidden;border:1px solid #e8e4d8;border-radius:var(--radius-card);padding:22px;background:#fffefa;box-shadow:var(--shadow-soft);transition:transform .2s,box-shadow .2s}.group-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}.group-card:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--green)}.group-card:nth-child(3n+2):before{background:var(--gold)}.group-card:nth-child(3n):before{background:var(--red-liturgical)}.group-symbol{width:44px;height:44px;border-radius:50%;font-size:0;background:var(--green-pale)}.group-card h3{font-size:18px}.group-card p{font-size:12.5px;line-height:1.65}.meeting{font-size:12px}.team-item{border-radius:14px;padding:18px;box-shadow:var(--shadow-soft)}
+#activites{background:var(--cream)}#publicActivities{gap:20px}#publicActivities .group-card{padding:24px}#publicActivities .group-card:before{background:var(--gold)}#publicActivities .group-card h3{font-size:20px}#publicActivities .group-card button,#publicActivities .group-card a{border-radius:999px}#paiement .program-card{padding:clamp(20px,3vw,34px);border:1px solid #e7dfcc;background:#fffefa}#paiement .program-card h3{font-size:25px}#paiement form{margin-top:22px}#paiement input,#paiement select,#paiement textarea{min-height:48px;border:1px solid #dcded4;border-radius:12px;background:#fff;padding:13px}#paiement input:focus-visible,#paiement select:focus-visible,#paiement textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}#paiement button{border-radius:999px;min-height:48px;background:var(--red-liturgical);color:#fff;padding:12px 22px;font-weight:700}#paiement .notice,#paiement [role=alert]{border-radius:12px}footer{background:#062f28;padding:40px 0 24px}footer .foot-note{color:#e4c27e}.social a{border:1px solid #ffffff30;background:transparent;transition:background .2s,color .2s}.social a:hover{background:var(--gold);color:var(--green)}
+button,a,input,select,textarea{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}button:disabled{opacity:.65;cursor:wait}.section:nth-of-type(even){background-color:var(--cream-2)}
+/* Menu mobile plein écran */
+.menu-toggle{width:42px;height:42px;position:relative;display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;border:1px solid rgba(7,63,53,.15);border-radius:50%;background:var(--cream);z-index:31}.menu-toggle span{display:block;width:18px;height:2px;border-radius:2px;background:var(--green);transition:transform .2s,opacity .2s}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(7px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:900px){.section{padding:72px 0}.quick{gap:12px}.mission-grid{gap:20px}.group-grid{gap:14px}}
+@media(max-width:650px){header{height:68px}.menu-toggle{display:flex}.nav{display:flex;position:fixed;inset:0;z-index:30;background:var(--cream);padding:100px 28px 36px;box-shadow:none;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s,transform .22s,visibility .22s;overflow:auto}.nav.open{opacity:1;visibility:visible;transform:none}.nav a{font:600 28px/1.25 'Playfair Display',Georgia,serif;padding:9px 0;border:0!important}.nav a:after{height:2px}.hero{height:460px;min-height:460px}.hero-content{padding:26px 20px}.hero h1{font-size:clamp(34px,9vw,42px)!important}.hero p{font-size:15px}.hero .btn{height:48px;padding:0 17px}.section{padding:56px 0}.section-head{margin-bottom:24px}.quick{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.quick a{padding:16px 13px}.quick a:last-child{grid-column:1/-1}.mission-grid,.lower-grid,.group-grid,.team-grid{grid-template-columns:1fr}.saint-card{min-height:300px}.join{border-radius:18px}.group-card{padding:19px}.section-head:after{display:none}.foot{gap:15px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+@media(prefers-reduced-motion:reduce){.nav.open{animation:none}.menu-toggle span{transition:none}}
+
+/* Menu mobile déroulant en colonne — version finale */
+@media(max-width:650px){
+ .head{position:relative}
+ .menu-toggle{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;width:44px;height:44px;flex:0 0 44px;background:var(--cream);border:1px solid #073f3522;border-radius:50%;position:relative;z-index:42}
+ .nav{display:flex;position:absolute;top:calc(100% + 10px);left:auto;right:0;inset:auto 0 auto auto;width:min(360px,92vw);max-height:min(72vh,560px);overflow-y:auto;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding:10px 18px;background:rgba(251,249,242,.99);border:1px solid #d4a04466;border-radius:18px;box-shadow:0 18px 38px rgba(7,63,53,.18);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-8px);transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:41}
+ .nav.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);animation:none}
+ .nav a{font:600 21px/1.25 'Playfair Display',Georgia,serif;color:var(--green);padding:15px 3px;border:0!important;border-bottom:1px solid #d4a04455!important;display:flex;align-items:center;justify-content:space-between}
+ .nav a:last-child{border-bottom:0!important}
+ .nav a::after{content:'›';font:400 24px Arial,sans-serif;color:var(--gold)}
+ .nav a.active{color:var(--green2)}
+ .head-actions .login{padding:9px 11px;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){.nav{transition:none!important}}
+</style></head>
+<body>
+<header><div class="wrap head">
+<a class="brand" href="#accueil"><img class="brand-mark" src="image-01.webp" alt="Logo Enfance Missionnaire" loading="eager" fetchpriority="high"><span><strong>Enfance Missionnaire</strong><small>Paroisse Sainte Thérèse de Godomey</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+<nav class="nav" id="mainNav"><a class="active" href="#accueil">Accueil</a><a href="#mission">Notre mission</a><a href="#groupes">Les groupes</a><a href="#programme">Programmes</a><a href="#activites">Activités & frais</a><a href="#paiement">Paiement</a></nav>
+<div class="head-actions"><a class="login" href="#activites">Voir les activités</a></div>
+</div></header>
+<section class="hero" id="accueil"><img class="hero-photo" id="heroPhoto" alt="Église paroissiale Sainte Thérèse de Godomey" loading="eager" fetchpriority="high"><div class="hero-content"><div class="hero-badge"><span aria-hidden="true">✝</span> Paroisse Sainte Thérèse · Godomey</div><div class="eyebrow">Enfance Missionnaire de Godomey</div><h1>Grandir dans la Foi,<br>Partager l’Amour de Dieu</h1><p>Ensemble, les enfants d’aujourd’hui deviennent les témoins de l’Évangile de demain.</p><div class="hero-buttons"><a class="btn gold" href="#activites">▦ &nbsp; Consulter les activités</a><a class="btn outline" href="#programme">⌚ &nbsp; Voir les programmes</a></div></div><div class="dots" id="heroDots"></div><div class="hero-controls"><button class="circle-btn" id="prevSlide" aria-label="Image précédente">‹</button><button class="circle-btn" id="nextSlide" aria-label="Image suivante">›</button></div></section>
+<main><div class="wrap">
+<div class="quick">
+<a href="#accueil"><span class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></svg></span><b>Accueil</b><small>Retrouver l’essentiel</small></a>
+<a href="#mission"><span class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-4.7-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.3-8 11-8 11Z"/><path d="M12 7v7M8.5 10.5h7"/></svg></span><b>Notre mission</b><small>Notre foi et nos valeurs</small></a>
+<a href="#groupes"><span class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V8M12 14c-6 0-8-4-7-7 4 0 7 2 7 7ZM12 11c0-5 3-8 7-8 1 5-2 8-7 8Z"/><path d="M8 21h8"/></svg></span><b>Les groupes</b><small>Informations et missions</small></a>
+<a href="#programme"><span class="quick-icon">▦</span><b>Programmes</b><small>Jours et lieux de rencontre</small></a>
+<a href="#activites"><span class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M15 9a4 4 0 1 0 0 6M9 11h5M9 13h5"/></svg></span><b>Activités</b><small>Dates, frais et paiement</small></a>
+</div>
+<section class="section" id="mission"><div class="section-head"><div><div class="kicker">Qui sommes-nous ?</div><h2>Une enfance qui évangélise</h2></div></div>
+<div class="mission-grid"><div class="mission-copy"><p>L’Enfance Missionnaire est un creuset d’enfants de <strong>0 à 16 ans</strong>, axé essentiellement sur l’évangélisation des enfants par les enfants eux-mêmes.</p><p>À Godomey, notre communauté rassemble dix groupes complémentaires : prière, animation, liturgie et service. Chacun permet aux enfants de grandir dans la foi, de créer des liens fraternels et de participer à la vie paroissiale.</p><a class="btn gold" href="#groupes">Voir les 10 groupes →</a></div>
+<div class="saint-card"><img id="saintPhoto" alt="Photo de la communauté paroissiale" loading="lazy" decoding="async"><div class="saint-caption">« Je passerai mon ciel à faire du bien sur la terre. »<br><small style="font:13px 'DM Sans',sans-serif">Sainte Thérèse de l’Enfant Jésus</small></div></div>
+<div class="events" id="programme"><h3>Nos rendez-vous hebdomadaires</h3>
+<div class="event"><div class="date"><b>17h</b>SAM.</div><div><strong>Groupes du samedi</strong><small>Samuels, Lecteurs et Kizito</small></div><span>›</span></div>
+<div class="event"><div class="date"><b>10h</b>DIM.</div><div><strong>Groupes du dimanche</strong><small>Prières, animation et service</small></div><span>›</span></div>
+<div class="event"><div class="date"><b>10</b>grp.</div><div><strong>Une communauté active</strong><small>Des activités selon chaque groupe</small></div><span>›</span></div>
+<p style="font-size:11px;color:#65756e;margin:12px 3px 0">Les horaires indiqués sont ceux des répétitions mentionnées dans la présentation paroissiale.</p></div></div>
+<div class="lower-grid"><div class="photo-tile"><img id="communityPhoto" alt="Enfants et communauté" loading="lazy" decoding="async"><div class="photo-caption"><b>Une enfance engagée pour un monde meilleur</b><span>Partager · Prier · Servir</span></div></div><div class="program-card"><div class="kicker">Grandir ensemble</div><h3>Des talents au service de la foi</h3><p>Liturgie, chants, prière, animation et solidarité : chaque enfant peut trouver sa place et apprendre à servir.</p><a class="text-link" href="#groupes">Consulter les programmes →</a></div><div class="quote-card"><span>✝</span>« Les enfants sont la lumière de l’Église »<div style="font:12px 'DM Sans',sans-serif;color:#7b8b7e;margin-top:12px">Ensemble pour la mission</div></div></div>
+</section>
+</div>
+<section class="section groups" id="groupes"><div class="wrap"><div class="section-head"><div><div class="kicker">Trouver sa place</div><h2>Les dix groupes de Godomey</h2></div><span class="text-link">Prière · Liturgie · Service</span></div><div class="group-grid" id="groupGrid"></div></div></section>
+<section class="section" id="equipe"><div class="wrap"><div class="section-head"><div><div class="kicker">Au service de la communauté</div><h2>La coordination paroissiale</h2></div></div><div class="team-grid" id="teamGrid"></div><p style="font-size:12px;color:var(--muted);line-height:1.7">La coordination est accompagnée par les commissions Liturgie, Secrétariat et Finance, Activités culturelles, Organisation et Restauration.</p></div></section>
+<section class="section" id="activites"><div class="wrap"><div class="section-head"><div><div class="kicker">Calendrier paroissial</div><h2>Activités de l’Enfance Missionnaire</h2><p style="max-width:680px;color:var(--muted);line-height:1.7">Consultez les activités proposées, leurs périodes, les informations pratiques et les frais de participation publiés par la coordination.</p></div></div><div id="publicActivities" class="group-grid"><article class="group-card"><h3>Chargement des activités…</h3><p>Les activités publiées apparaîtront ici.</p></article></div><div class="notice" style="display:block;position:static;margin-top:18px">Les dates et frais affichés sont ceux enregistrés et publiés dans l’espace de coordination. Si une information est indiquée « à confirmer », veuillez attendre une confirmation officielle avant de payer.</div></div></section>
+<section class="section" id="paiement"><div class="wrap"><div class="section-head"><div><div class="kicker">Règlement des frais</div><h2>Paiement des activités</h2></div></div><div class="program-card"><h3>Déclarer le paiement d’une activité</h3><p>Choisissez une activité publiée, effectuez le paiement uniquement sur les coordonnées officielles affichées pour celle-ci, puis transmettez les informations de votre transaction. Cette déclaration ne vaut pas validation automatique du paiement.</p><div id="paymentInstructions" class="notice" style="display:none;margin:14px 0"></div><form id="paymentForm" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px"><label class="field">Activité<select id="payActivity" required><option value="">Chargement des activités…</option></select></label><label class="field">Prénom<input id="payFirst" required maxlength="100" autocomplete="given-name"></label><label class="field">Nom<input id="payLast" required maxlength="100" autocomplete="family-name"></label><label class="field">Téléphone du participant<input id="payPhone" required maxlength="40" autocomplete="tel"></label><label class="field">Opérateur de paiement<select id="payOperator" required><option value="">Choisir…</option><option>MTN MoMo</option><option>Moov Money</option><option>Autre</option></select></label><label class="field">Nom du titulaire du compte payeur<input id="payAccount" required maxlength="180"></label><label class="field">Téléphone ayant effectué le paiement<input id="payPayerPhone" required maxlength="40"></label><label class="field">Référence de transaction<input id="payReference" maxlength="180" placeholder="Référence figurant sur le reçu"></label><label class="field">E-mail (facultatif)<input id="payEmail" type="email" maxlength="180" autocomplete="email"></label><div style="grid-column:1/-1"><button class="btn" type="submit">Envoyer la déclaration de paiement</button><p id="paymentStatus" role="status" aria-live="polite"></p></div></form><p><strong>À savoir :</strong> l’équipe de coordination vérifiera la déclaration. Ne partagez jamais votre code PIN Mobile Money.</p></div></div></section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#accueil"><img class="brand-mark" src="image-02.webp" alt="Logo Enfance Missionnaire" loading="eager" fetchpriority="high"><span><strong>Enfance Missionnaire</strong><small>Paroisse Sainte Thérèse de Godomey</small></span></a><div class="foot-note">Ensemble pour la mission !</div><div class="social"><a href="https://maps.app.goo.gl/cYw94hsqBNpkdsuG7" target="_blank" rel="noopener" aria-label="Localisation">⌖</a><a href="#inscription" aria-label="Contact">✉</a></div></div><div class="wrap" style="margin-top:20px;font-size:11px;color:#b8cec4">Godomey · Abomey-Calavi · Bénin <span style="float:right"><a href="https://maps.app.goo.gl/cYw94hsqBNpkdsuG7" target="_blank" rel="noopener">Voir la paroisse sur la carte ↗</a></span></div></footer>
+<div class="notice" id="notice" role="status"></div>
+
+<script>
+const heroSlides=[
+"image-03.webp",
+"image-04.webp",
+"image-05.webp",
+"image-06.webp",
+"image-07.webp",
+"image-08.webp",
+"image-09.webp",
+"image-10.webp",
+"image-11.webp",
+"image-12.webp",
+"image-13.webp",
+"image-14.webp",
+"image-15.webp",
+"image-16.webp",
+"image-17.webp",
+"image-18.webp",
+"image-19.webp",
+"image-20.webp",
+"image-21.webp",
+"image-22.webp",
+"image-23.webp",
+"image-24.webp",
+"image-25.webp"
+];
+const groups=[
+["Samuels","Service à l’autel en présence du prêtre.","Samedi · 17h","Aile de la grande église"],
+["Groupe de prière SEJP","Groupe de prière à dévotion christique, lié au Divin Enfant Jésus.","Dimanche · 10h","Derrière le secrétariat de la catéchèse"],
+["MADEB","Groupe de prière et d’animation à dévotion apostolique.","Dimanche · 10h","Derrière le secrétariat de la catéchèse"],
+["Tarcicius","Groupe de prière à dévotion christique, tourné vers le Sacré-Cœur de Jésus.","Dimanche · 10h","Salle Romain DAI"],
+["Lecteurs","Lecture des textes liturgiques et des prières pendant les célébrations eucharistiques.","Samedi · 17h","Sous-sol de la paroisse"],
+["Maman Chérie","Groupe d’animation et de prière à dévotion mariale.","Dimanche · 10h","Sous le manguier devant le portail principal du presbytère"],
+["Kizito","Animation et chants liturgiques accompagnant le prêtre à l’autel.","Samedi · 17h","Salle Abbé Florent NASCIMENTO"],
+["Légion de Marie","Groupe de prière à dévotion mariale engagée.","Dimanche · 10h","Derrière l’ancien secrétariat paroissial"],
+["Divine Miséricorde","Groupe de prière tourné vers la divine miséricorde de Dieu.","Dimanche · 10h","Derrière le secrétariat de la catéchèse"],
+["Scout","Groupe générationnel d’action et de service pour la paix et la sécurité lors des manifestations paroissiales.","Dimanche · 10h","Derrière la grande église"]
+];
+const team=[
+["Aumônier","Père Michel Gaudens MOBIO AWO, CJM"],
+["Coordonnateur","Ulrich JOHNSON Walter"],
+["Coordonnateur adjoint","Basilia ZINMONSSE"],
+["Secrétaire général","Daren ZANNOU"],
+["Secrétaire général adjoint","Amos TCHIKPOTO"],
+["Trésorier général","Emeric HOUNHOUEDE"],
+["Trésorier général adjoint","Grâce TOUDONOU"],
+["Organisateur général","Hyppolite ABIODOUN"],
+["Organisateur général adjoint","Fidelia ABILI"],
+["Deuxième organisateur adjoint","Julien AGBESSI"],
+["Commissaire aux comptes","Mariane AZONWAKIN"],
+["Commissaire aux comptes","Aimé GBAGUIDI"]
+];
+const groupGrid=document.getElementById('groupGrid');
+groups.forEach((g,i)=>{const el=document.createElement('article');el.className='group-card';el.innerHTML=`<div class="group-symbol"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M6 9h12"/><circle cx="12" cy="12" r="9"/></svg></div><div><h3>${g[0]}</h3><p>${g[1]}</p><p class="meeting">${g[2]}</p><p>${g[3]}</p></div>`;groupGrid.appendChild(el)});
+const teamGrid=document.getElementById('teamGrid');
+team.forEach(t=>{const el=document.createElement('div');el.className='team-item';el.innerHTML=`<small>${t[0]}</small><b>${t[1]}</b>`;teamGrid.appendChild(el)});
+let slide=0;const photo=document.getElementById('heroPhoto');
+function showSlide(n){slide=(n+heroSlides.length)%heroSlides.length;photo.src=heroSlides[slide];}
+// Diaporama entièrement automatique : aucun point ni bouton de navigation visible ou interactif.
+showSlide(0);
+
+document.getElementById('saintPhoto').src=heroSlides[5]||heroSlides[0];document.getElementById('communityPhoto').src=heroSlides[1]||heroSlides[0];
+
+</script>
+<script>
+(()=>{const nav=document.getElementById('mainNav');const toggle=document.getElementById('menuToggle');if(!nav||!toggle)return;const close=()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Ouvrir le menu');document.body.style.overflow=''};toggle.addEventListener('click',()=>{const opened=toggle.getAttribute('aria-expanded')==='true';if(opened)close();else{nav.classList.add('open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Fermer le menu');document.body.style.overflow='hidden'}});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{close();if(a.hash){nav.querySelectorAll('a').forEach(x=>x.classList.toggle('active',x===a))}}));document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();
+</script>
+<script>
+// Connexion du site public à Supabase (clé publishable uniquement côté navigateur).
+(()=>{
+ const BASE='https://ooobeyneiitjsmivhneb.supabase.co/rest/v1';
+ const KEY='sb_publishable_wWpg6oS-ilCFm0ooatP07Q_96Zm64yp';
+ const headers={'apikey':KEY,'Authorization':'Bearer '+KEY,'Content-Type':'application/json','Accept':'application/json'};
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const money=n=>new Intl.NumberFormat('fr-FR').format(Number(n)||0)+' FCFA';
+ const activitiesEl=document.getElementById('publicActivities');
+ const select=document.getElementById('payActivity');
+ const instructions=document.getElementById('paymentInstructions');
+ const form=document.getElementById('paymentForm');
+ const status=document.getElementById('paymentStatus');
+ let activities=[];
+ async function request(path,options={}){
+   const res=await fetch(BASE+'/'+path,{...options,headers:{...headers,...(options.headers||{})}});
+   let data; try{data=await res.json()}catch{data=null}
+   if(!res.ok) throw new Error(data?.message||data?.hint||data?.details||'Erreur Supabase ('+res.status+').');
+   return data;
+ }
+ function updateInstructions(){
+   const a=activities.find(x=>x.id===select.value);
+   if(!a){instructions.style.display='none';instructions.textContent='';return;}
+   instructions.style.display='block';
+   instructions.innerHTML='<strong>Coordonnées officielles pour cette activité</strong><br>Opérateur : '+esc(a.payment_operator||'À confirmer')+'<br>Titulaire : '+esc(a.payment_account_name||'À confirmer')+'<br>Numéro : '+esc(a.payment_number||'À confirmer')+'<br>Frais : '+money(a.fee_xof)+(a.whatsapp_number?'<br>Contact : '+esc(a.whatsapp_number):'');
+ }
+ function renderActivities(){
+   if(activitiesEl){
+     if(!activities.length){activitiesEl.innerHTML='<article class="group-card"><h3>Aucune activité publiée pour le moment</h3><p>Revenez consulter cette page ou contactez la coordination paroissiale.</p></article>';}
+     else activitiesEl.innerHTML=activities.map(a=>'<article class="group-card" style="border-top:3px solid #d4a044"><div class="group-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></div><h3>'+esc(a.title)+'</h3><p>'+esc(a.description||'Activité de l’Enfance Missionnaire.')+'</p><p class="meeting">'+esc(a.date_label||'À confirmer')+'</p><p>'+esc(a.location||'Lieu à confirmer')+'</p><p><strong style="font:700 25px Georgia,serif;color:#a67a1e">'+money(a.fee_xof)+'</strong></p><p><span class="pill" style="display:inline-block;background:#e8f0e8;padding:5px 10px;border-radius:20px">Publiée</span></p><button class="btn" type="button" data-join="'+esc(a.id)+'">Je participe</button></article>').join('');
+     activitiesEl.querySelectorAll('[data-join]').forEach(b=>b.addEventListener('click',()=>{select.value=b.dataset.join;updateInstructions();document.getElementById('paiement')?.scrollIntoView({behavior:'smooth'});}));
+   }
+   if(select){select.innerHTML='<option value="">Choisir une activité…</option>'+activities.map(a=>'<option value="'+esc(a.id)+'">'+esc(a.title)+' — '+money(a.fee_xof)+'</option>').join('');}
+   updateInstructions();
+ }
+ async function loadActivities(){
+   try{activities=await request('activities?select=id,title,description,location,date_label,fee_xof,payment_operator,payment_account_name,payment_number,whatsapp_number,status&status=eq.published&order=created_at.desc')||[];renderActivities();}
+   catch(err){if(activitiesEl)activitiesEl.innerHTML='<article class="group-card"><h3>Chargement indisponible</h3><p>Les activités ne peuvent pas être chargées actuellement. Réessayez plus tard.</p></article>';if(select)select.innerHTML='<option value="">Activités indisponibles</option>';console.error('Chargement des activités Supabase:',err);}
+ }
+ select?.addEventListener('change',updateInstructions);
+ form?.addEventListener('submit',async e=>{
+   e.preventDefault();status.textContent='Envoi de la déclaration…';status.style.color='';
+   const activity=activities.find(a=>a.id===select.value);
+   if(!activity){status.textContent='Choisissez une activité publiée.';return;}
+   if(!activity.payment_number){status.textContent='Les coordonnées de paiement de cette activité ne sont pas encore configurées. Contactez la coordination.';return;}
+   const row={activity_id:activity.id,first_name:document.getElementById('payFirst').value.trim(),last_name:document.getElementById('payLast').value.trim(),phone:document.getElementById('payPhone').value.trim(),email:document.getElementById('payEmail').value.trim()||null,payment_operator:document.getElementById('payOperator').value,payer_account_name:document.getElementById('payAccount').value.trim(),payer_phone:document.getElementById('payPayerPhone').value.trim(),payment_reference:document.getElementById('payReference').value.trim()||null,payment_status:'declared'};
+   const submit=form.querySelector('button[type="submit"]');submit.disabled=true;
+   try{await request('registrations',{method:'POST',headers:{Prefer:'return=minimal'},body:JSON.stringify(row)});status.textContent='Votre déclaration a été envoyée. Elle sera vérifiée par la coordination paroissiale.';status.style.color='#17633b';form.reset();updateInstructions();}
+   catch(err){status.textContent='Échec de l’envoi : '+err.message+' Vérifiez votre connexion et réessayez.';status.style.color='#a53a3a';console.error('Envoi déclaration Supabase:',err);}
+   finally{submit.disabled=false;}
+ });
+ loadActivities();
+})();
+</script>
+</body></html>
